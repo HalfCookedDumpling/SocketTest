@@ -71,7 +71,7 @@ int main (int argc, char **argv) {
 		memset(inputBuffer, 0, 2000);
 		scanf("%s", inputBuffer);
 
-		send(socketFD, inputBuffer, 2000, 0);
+		send(socketFD, inputBuffer, 512, 0);
 
 		if (inputBuffer[0] == 'q') {
 			break;
